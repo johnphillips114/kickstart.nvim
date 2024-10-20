@@ -413,12 +413,20 @@ require('lazy').setup({
     end,
   },
 
-  { -- You can easily change to a different colorscheme.
-    'folke/tokyonight.nvim',
-    priority = 1000, -- Make sure to load this before all the other start plugins.
+  -- { -- You can easily change to a different colorscheme.
+  -- 'folke/tokyonight.nvim',
+  -- priority = 1000, -- Make sure to load this before all the other start plugins.
+  -- init = function()
+  --   vim.cmd.colorscheme 'tokyonight-night'
+  --   vim.cmd.hi 'Comment gui=none'
+  -- end,
+  -- },
+  --
+  {
+    'shaunsingh/nord.nvim',
+    priority = 1000,
     init = function()
-      vim.cmd.colorscheme 'tokyonight-night'
-
+      vim.cmd.colorscheme 'nord'
       vim.cmd.hi 'Comment gui=none'
     end,
   },
